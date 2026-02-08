@@ -3,7 +3,7 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import ee
-import geemap.foliumap as geemap
+import geemap
 import streamlit as st
 import plotly.express as px
 import pandas as pd
