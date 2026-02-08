@@ -43,12 +43,9 @@ def cached_timeseries(collection, band, region, scale):
 
 
 if "ee_initialized" not in st.session_state:
-    try:
-        ee.Initialize(project="multisatellitefusion")
-    except Exception:
-        ee.Authenticate()
-        ee.Initialize(project="multisatellitefusion")
+    ee.Initialize(project="multisatellitefusion")
     st.session_state.ee_initialized = True
+
 
 # =========================
 # PAGE CONFIG
